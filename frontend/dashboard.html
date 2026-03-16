@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | Firebase Login</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="card">
+        <p class="card__subtitle">Has iniciado sesión como</p>
+        <h1 id="userEmail" class="card__title">Cargando...</h1>
+        <p id="status" class="status" aria-live="polite">
+          Verificando autenticación...
+        </p>
+        <button id="logoutBtn" class="form__button" type="button">
+          Cerrar sesión
+        </button>
+      </section>
+    </main>
+
+    <script type="module" src="dashboard.js"></script>
+  </body>
+</html>

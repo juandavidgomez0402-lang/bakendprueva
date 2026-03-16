@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login con Firebase</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="card">
+        <h1 class="card__title">Inicia sesión</h1>
+        <p class="card__subtitle">
+          Usa tu correo y contraseña para aprender a autenticarte con Firebase.
+        </p>
+        <form id="loginForm" class="form">
+          <label class="form__label" for="email">Correo electrónico</label>
+          <input class="form__input" type="email" id="email" placeholder="tu@correo.com" required />
+
+          <label class="form__label" for="password">Contraseña</label>
+          <input class="form__input" type="password" id="password" placeholder="Ingresa tu contraseña" required />
+
+          <button class="form__button" type="submit">Entrar</button>
+        </form>
+        <p id="status" class="status" aria-live="polite"></p>
+        <p class="hint">
+          Recuerda crear usuarios desde la consola de Firebase Authentication para poder iniciar sesión aquí.
+        </p>
+      </section>
+    </main>
+
+    <!-- Tu archivo JS principal -->
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
