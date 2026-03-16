@@ -1,0 +1,10 @@
+# Ignorar dependencias instaladas localmente
+node_modules/
+
+# Archivos de entorno o credenciales locales
+.env
+.env.local
+
+# Archivos temporales del editor/OS
+.DS_Store
+Thumbs.db
